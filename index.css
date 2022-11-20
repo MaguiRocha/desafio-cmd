@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+body {
+  margin: 0px;
+  background-color: black;
+}
+
+.contenedor-general {
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+}
+
+.desafio {
+  border: solid;
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  max-width: 350px;
+  min-height: 255px;
+}
+
+.contenedor-de-desafios {
+  gap: 30px;
+  display: grid;
+  grid-template-rows: auto;
+  justify-content: center;
+  padding: 20px;
+}
+
+@media (min-width: 750px) {
+  .contenedor-de-desafios {
+    grid-template-columns: auto auto;
+    grid-template-rows: none;
+  }
+}
+
+@media (min-width: 960px) {
+  .contenedor-de-desafios {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+.imagen-desafio {
+  width: 100%;
+  min-height: 100px;
+}
+
+.contenedor-de-foto {
+  height: fit-content;
+}
+
+.contenedor-de-titulo-y-descr {
+  padding: 10px;
+}
+
+.descripcion-desafio,
+.descripcion-portfolio {
+  color: white;
+  text-align: center;
+  margin: 0px;
+}
+
+.contenedor-url {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.titulo-portolio,
+.titulo-desafio,
+.url-desafio {
+  color: yellow;
+  text-align: center;
+}
