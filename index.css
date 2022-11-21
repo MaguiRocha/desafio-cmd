@@ -15,12 +15,9 @@ body {
 }
 
 .desafio {
-  border: solid;
-  display: grid;
   grid-template-rows: 1fr;
   justify-content: center;
   max-width: 350px;
-  min-height: 255px;
 }
 
 .contenedor-de-desafios {
@@ -34,7 +31,6 @@ body {
 @media (min-width: 750px) {
   .contenedor-de-desafios {
     grid-template-columns: auto auto;
-    grid-template-rows: none;
   }
 }
 
@@ -45,19 +41,33 @@ body {
 }
 
 .imagen-desafio {
+  object-fit: cover;
+  height: 250px;
   width: 100%;
-  min-height: 100px;
-}
-
-.contenedor-de-foto {
-  height: fit-content;
 }
 
 .contenedor-de-titulo-y-descr {
   padding: 10px;
 }
 
-.descripcion-desafio,
+.descripcion-desafio {
+  color: white;
+  text-align: center;
+  margin: 0px;
+}
+
+@media (min-width: 750px) {
+  .descripcion-desafio {
+    min-height: 256px;
+  }
+}
+
+@media (min-width: 960px) {
+  .descripcion-desafio {
+    min-height: 265px;
+  }
+}
+
 .descripcion-portfolio {
   color: white;
   text-align: center;
